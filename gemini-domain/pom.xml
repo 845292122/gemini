@@ -9,8 +9,8 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>gemini-service</artifactId>
-    <name>gemini-service</name>
+    <artifactId>gemini-domain</artifactId>
+    <name>gemini-domain</name>
     <description>服务层</description>
 
     <dependencies>

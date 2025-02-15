@@ -9,8 +9,8 @@
     <version>${revision}</version>
     <packaging>pom</packaging>
     <modules>
-        <module>gemini-web</module>
-        <module>gemini-service</module>
+        <module>gemini-adapter</module>
+        <module>gemini-domain</module>
         <module>gemini-framework</module>
     </modules>
 

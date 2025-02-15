@@ -9,14 +9,14 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>gemini-web</artifactId>
-    <name>gemini-web</name>
+    <artifactId>gemini-adapter</artifactId>
+    <name>gemini-adapter</name>
     <description>表现层</description>
 
     <dependencies>
         <dependency>
             <groupId>com.gemini</groupId>
-            <artifactId>gemini-service</artifactId>
+            <artifactId>gemini-domain</artifactId>
             <version>${revision}</version>
         </dependency>
     </dependencies>
