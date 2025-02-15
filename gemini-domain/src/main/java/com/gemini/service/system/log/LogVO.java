@@ -64,7 +64,6 @@ public class LogVO implements Serializable {
     @Excel(name = "消耗时间(ms)", orderNum = "7")
     private Long costTime;
 
-
     @Excel(name = "操作人员", orderNum = "8")
     private String operName;
 

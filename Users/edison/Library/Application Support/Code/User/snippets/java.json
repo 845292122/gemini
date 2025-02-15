@@ -1,0 +1,18 @@
+{
+    "Java Class Template": {
+        "prefix": "class",
+        "body": [
+            "package ${TM_DIRECTORY/.*src\\/main\\/java\\/(.*)/${1:/.*\\//\\./g}/};",
+            "",
+            "/**",
+            " * ${1:description}",
+            " *",
+            " * @author edison",
+            " */",
+            "public class ${TM_FILENAME_BASE} {",
+            "    $0",
+            "}"
+        ],
+        "description": "Java Class Template with author"
+    }
+}

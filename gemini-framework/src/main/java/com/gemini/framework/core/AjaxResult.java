@@ -8,6 +8,7 @@ import java.util.Objects;
 
 /**
  * ajax结果类
+ * 
  * @author edison
  */
 @NoArgsConstructor
@@ -52,7 +53,7 @@ public class AjaxResult extends HashMap<String, Object> {
     public static AjaxResult ok(String msg, Object data) {
         return new AjaxResult(HttpStatus.OK.value(), msg, data);
     }
-    
+
     public static AjaxResult fail() {
         return AjaxResult.fail("操作失败");
     }

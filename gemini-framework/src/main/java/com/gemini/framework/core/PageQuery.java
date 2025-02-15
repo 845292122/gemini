@@ -7,6 +7,8 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
+ * 分页查询
+ * 
  * @author edison
  */
 @Data
