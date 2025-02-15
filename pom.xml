@@ -58,7 +58,6 @@
                 <version>3.5.5</version>
             </dependency>
 
-            <!-- knife4j -->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
