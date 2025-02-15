@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "gemini-ui"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "disabled"
+	}
+}

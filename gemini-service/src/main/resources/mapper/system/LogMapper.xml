@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gemini.service.system.log.LogMapper">
+
+    <select id="getAllLogs" resultType="com.gemini.service.system.log.LogVO">
+        SELECT sl.*, su.username as operName FROM sys_log sl
+        LEFT JOIN sys_user su
+        ON su.id = sl.user_id
+    </select>
+
+</mapper>

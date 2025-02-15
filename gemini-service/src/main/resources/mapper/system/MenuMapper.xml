@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gemini.service.system.menu.MenuMapper">
+    <select id="findPermListByUserId" parameterType="java.lang.String">
+        SELECT
+        sm.perm
+        FROM
+        sys_menu sm
+        LEFT JOIN
+        sys_user_menu s_um
+        ON sm.id = s_um.menu_id
+        WHERE
+        sm.deleted = 0
+        AND s_um.user_id = ${userId}
+    </select>
+
+    <select id="findMenuListByUserId" resultType="com.gemini.service.system.menu.MenuEntity" parameterType="java.lang.String" >
+        SELECT
+        sm.*
+        FROM
+        sys_user su
+        LEFT JOIN
+        sys_user_menu s_um
+        ON su.id = s_um.user_id
+        LEFT JOIN
+        sys_menu sm
+        ON sm.id = s_um.menu_id
+        WHERE
+        su.deleted = 0
+        AND sm.deleted = 0
+        AND su.id = ${userId}
+    </select>
+</mapper>
